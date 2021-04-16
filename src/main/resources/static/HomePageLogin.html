@@ -1,0 +1,376 @@
+
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="renderer" content="webkit" />
+<meta name="apple-itunes-app" content="app-id=458270120" />
+<meta name="Keywords" content="快递100,在线寄件,寄快递,快递查询,快递单号查询,快递API,寄件API,快递查询API,快递接口,商家寄件,快递打印,快递面单" />
+<meta name="Description" content=" 一站式查快递、寄快递信息服务平台。支持全球1000+快递公司单号查询、价格查询、时效查询；支持商家寄件、寄快递，国际快递、同城快递、大件物流；提供企业级快递查询API接口、电子面单API接口、寄件API接口" />
+<meta name="mobile-agent" content="format=html5;url=https://m.kuaidi100.com/" />
+<title>快递100-查快递,寄快递,上快递100</title>
+<link rel="icon" type="image/gif" href="img/favicon.gif" />
+	<link rel="stylesheet" href="css/page/one.css" />
+	<link rel="stylesheet" href="css/page/two.css" />
+	<link rel="stylesheet" href="css/page/three.css" />
+</head>
+<body>
+	<div class="kd-app">
+		<div class="kd-header">
+  <div class="kd-content">
+    <a class="kd-header__logo" href="#" title="查快递，寄快递，上快递100"></a>
+      <div class="kd-header__userinfo kd-header__userinfo--hide" style="display: block;">
+      <a href="register.html" class="kd-header__btn kd-header__btn--bd" role="logout">注册</a>
+      <a href="login.html" class="kd-header__btn kd-header__btn--bg" role="logout">登录</a>
+    </div> 
+				<!--登录成功后的代码-->
+	  <div class="kd-header__userinfo kd-header__userinfo--active" style="visibility: visible;display: none;">
+	      <p style="display: none;"><a href="#" class="kd-header__btn kd-header__btn--bd" role="logout" >注册</a></p>
+	      <p style="display: none;"><a href="#" class="kd-header__btn kd-header__btn--bg" role="logout" >登录</a></p>
+	      <a class="kd-header__avatar" role="login" href="#" style="background-image: url(img/mobileapi.jpg);"></a>
+	      <a class="kd-header__username" role="login" href="#" style="display: block">15197668292</a> 
+	       <!-- <div class="kd-header__menu" style="top: 50px; display: none; height: 200px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;"><a href="//b.kuaidi100.com/page/ep?source=sso" class="kd-header__menuitem" target="_blank">进入快递管家</a>
+	        <a href="#" class="kd-header__menuitem">我的查件记录</a>
+	        <a href="#" class="kd-header__menuitem">我的寄件订单</a>
+	        <a href="#" class="kd-header__menuitem">用户中心</a> 
+	        <a class="kd-header__menuitem" role="logout-handler">退出</a>
+	      </div> -->
+	 </div> 
+	
+	
+    <ul class="kd-header__navs">
+      <li class="kd-header__nav" role="home"><a href="/" >首页</a></li>
+      <li class="kd-header__nav  kd-header-nav--toggle" role="user">
+        个人用户
+        <div class="kd-header__menu">
+          <a href="#" class="kd-header__menuitem">产品介绍</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">寄快递</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">国际快递</a>
+          <a href="#" class="kd-header__menuitem">快递大全</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">开放服务</a>
+        </div>
+      </li>
+      <li class="kd-header__nav kd-header-nav--toggle" role="enterprise">
+        企业用户
+        <div class="kd-header__menu">
+          <a href="#" class="kd-header__menuitem">快递管家</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">企业API</a>
+        </div>
+      </li>
+      <li class="kd-header__nav kd-header-nav--toggle" role="service">
+        物流服务商
+        <div class="kd-header__menu">
+          <a href="#" class="kd-header__menuitem" target="_blank">快递员收件端</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">云打印硬件</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">快递公司入驻</a>
+        </div>
+      </li>
+      <li class="kd-header__nav kd-header-nav--toggle" role="api">
+        接口（API）
+        <div class="kd-header__menu">
+          <a class="kd-header__menuitem" href="#" target="_blank">产品介绍</a>
+          <a class="kd-header__menuitem" href="#" target="_blank">接口申请</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">技术文档</a>
+          <a href="#" class="kd-header__menuitem" target="_blank">云平台</a>
+        </div>
+      </li>
+      <li class="kd-header__nav" role="buyer">
+        <a href="#">3.5元寄全国</a>
+        <div class="kd-header__badge">商家特惠</div>
+      </li>
+    </ul>
+  </div>
+</div>
+		<div class="kd-footer">
+  <div class="kd-content">
+    <div class="kd-footer__link">
+      <dl>
+        <dt>了解我们</dt>
+        <dd><a href="#" target="_blank">关于快递100</a></dd>
+        <dd><a href="#" target="_blank">新闻资讯</a></dd>
+        <dd><a href="#" target="_blank">隐私政策</a></dd>
+      </dl>
+      <dl>
+        <dt>关注我们</dt>
+        <dd><a href="#">微信公众号</a></dd>
+        <dd><a href="#">新浪微博</a></dd>
+        <dd><a href="#">100社区</a></dd>
+      </dl>
+      <dl>
+        <dt>联系我们</dt>
+        <dd><a href="#" target="_blank">联系方式</a></dd>
+        <dd><a href="#" target="_blank">加入我们</a></dd>
+        <dd><a href="#">帮助文档</a></dd>
+      </dl>
+      <dl>
+        <dt>快速通道</dt>
+        <dd><a href="#" id="viewH5">手机HTML5站</a></dd>
+        <dd><a href="#">快递网点入驻/加盟</a></dd>
+        <dd><a href="#">快递网点维护/更新</a></dd>
+      </dl>
+    </div>
+    <ul class="kd-footer__qrcode">
+      <li class="kd-footer__code">
+        <img src="img/qrcode-courier.png" alt="快递员端">
+        <p>快递100收件端</p>
+      </li>
+      <li class="kd-footer__code">
+        <img src="img/qrcode-public.png" alt="关注公众号">
+        <p>快递100</p>
+      </li>
+    </ul>
+    <div class="kd-clearfix"></div>
+    <div class="kd-footer__copyright">
+      深圳前海百递网络有限公司 版权所有&copy;2010-<span id="copyrightYear">2021</span>&nbsp;&nbsp;<a href="#" target="_blank">粤ICP备14085002号-5</a>&nbsp;&nbsp;<a href="#" target="_blank">粤B2-20150010</a>
+    </div>
+    <script>document.getElementById("copyrightYear").innerHTML = (new Date()).getFullYear();</script>
+    <ul class="kd-footer__industry">
+      <li><a target="_blank" href="#" title="深圳市市场监督管理局企业主体身份公示" style="background-position: -287px -206px;width: 16px;height: 17px;" rel="nofollow"></a></li>
+      <!-- <li><a target="_blank" href="http://61.144.227.239:9002/" title="深圳市网上报警平台" style="background-position: -287px -233px;width: 16px;height: 18px;" rel="nofollow"></a></li> -->
+      <li><a target="_blank"  title="可信任网站" href="#" style="background-position: -262px -259px;width: 42px;height: 15px;" rel="nofollow"></a></li>
+    </ul>
+  </div>
+</div>
+<div class="kd-float">
+  <a href="javascript:void(0)" class="kd-float__top" id="floatTop" title="回到顶部" style="display: none;"></a>
+  <a href="javascript:void(0)" class="kd-float__service" id="uDeskTarget" title="在线客服"></a>
+  <a href="javascript:void(0)" class="kd-float__qq" id="floatQQ" title="qq">
+    <!-- <ul class="qq-pannel" id="qqPannel">
+      <li>云打印QQ咨询群<span class="mark" data-type="group" data-key="gM3M8mXBP9Bqdi-lOJHILHzFyOcWRXCw">1737108266</span></li>
+      <li>收件端QQ咨询群<span class="mark" data-type="group" data-key="CkxXQIgQKTZhtWL0uAZyAAzKcPLjM8C_">747405711</span></li>
+      <li>API接口QQ咨询<span class="mark" data-type="person" data-key="2850515747">2850515747</span></li>
+      <li>快递管家QQ咨询群<span class="mark" data-type="group" data-key="uhXwFjHmTlUXeNaxpnLwVmjd-KzrgehZ">493113620</span></li>
+    </ul> -->
+  </a>
+  <a href="javascript:void(0)" class="kd-float__h5" id="floatH5" title="移动端"></a>
+</div>
+		<div class="kd-body">
+			<div class="mask" id="mask"></div>
+			<div class="banners" id="banner">
+			</div>
+			<div class="query-wrap kd-content">
+				<div class="kd-clearfix">
+					<div class="input-wrap">
+						<div class="icon" id="comIcon">
+							<!-- IE9以下不支持背景，此处必须使用img -->
+							<img src="img/default-com.png">
+						</div>
+						<input type="text" placeholder="输入单号，在1000+国内外快递公司中为您智能查询" id="input" autocomplete="off">
+					</div>
+					<div class="button" id="query">查快递</div>
+				</div>
+				<div class="demo" id="demoWrap">例如：<a href id="demo">SF2323523526</a><a class="import" href="#">批量导入查询&gt;&gt;</a></div>
+				<div class="com-list" id="comlist">
+  <div class="common suggest" id="suggestList" style="display: none">
+    <span class="li-title">推荐</span>
+  </div>
+ <!--查询下拉列表-->
+  <div class="kd-clearfix"></div>
+  <div class="other"><a href="https://www.kuaidi100.com/all/">查看更多快递公司&gt;&gt;</a>
+</div>
+</div>
+			</div>
+			<div class="products kd-content justify">
+				<a href="#" class="justify-item item courier"><img src="img/courier.gif" alt="">寄快递</a>
+				<a href="#" class="justify-item item all">快递大全</a>
+				<a href="#" class="justify-item item time">时效查询</a>
+				<a href="#" class="justify-item item network">快递网点</a>
+			</div>
+			<div class="section">
+				<div class="kd-content">
+					<div class="h1"><span>1.5亿用户的共同选择</span></div>
+					<div class="kd-clearfix" style="margin-top: 81px;">
+						<img src="img/section1.png" style="margin-top: 37px;" class="fl" width="606">
+						<div class="fr">
+							<div class="title orange">个人用户</div>
+							<div class="subtitle">快递100-多品牌比价，寄快递更省钱</div>
+							<div class="text">
+								<p>安心寄，丢必赔</p>
+								<p>支持寄国内、寄大件、同城急送、国际件、快递柜寄件</p>
+								<p>手机查快递，随时掌握包裹动态</p>
+							</div>
+							<div class="codes kd-clearfix">
+								<div class="code fl">
+									<img src="img/app-code.png" >
+									<p class="code-txt">扫码下载APP</p>
+								</div>
+								<div class="code fr">
+									<img src="img/miniprogram-code.png" >
+									<p class="code-txt">微信扫码体验小程序</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section-bg">
+				<div class="kd-content kd-clearfix">
+					<div class="fl">
+						<div class="title blue">企业用户</div>
+						<div class="subtitle">快递管家-企业、微商及商务人士的“快递管家”</div>
+						<div class="text">
+							<p>非常好用的快递单打印功能，支持超过1000+快递公司</p>
+							<p>自动跟踪您的快递进度，找出可能存在的异常快递单</p>
+							<p>自动给您的客户发送物流提醒</p>
+							<p>为您的客户定制一个专属查询页</p>
+							<p><a  class="link" href="#" target="_blank">了解更多</a></p>
+						</div>
+						<a class="btn" href="#" target="_blank">立即免费体验</a>
+					</div>
+					<img src="img/section2.png" width="565"  style="margin-top: 127px;" class="fr">
+				</div>
+				<div class="divide kd-content"></div>
+				<div class="kd-content kd-clearfix">
+					<img src="img/section3.png" width="636px" style="margin-top:-22px;" class="fl">
+					<div class="fr">
+						<div class="subtitle">企业API-帮助您的网站、系统和APP集成<br>快递100服务</div>
+						<div class="text">
+							<p>企业级查询接口API，累计提供超过百亿次的专业查询服务</p>
+							<p>助力上万家企业、电商提升物流环节的用户体验与服务质量</p>
+							<p>专业团队维护，稳定可靠，值得信赖</p>
+							<div class="api">
+								<span class="rss">快递信息订阅推送接口</span>
+								<span class="cloud">智能判断快递接口</span>
+								<span class="intime">实时快递查询接口</span>
+							</div>
+							<p><a class="link" href="#" target="_blank">了解更多</a></p>
+						</div>
+						<a class="btn" href="#" target="_blank">立即免费申请</a>
+					</div>
+				</div>
+			</div>
+			<div class="section service-swiper-wrap kd-content">
+				<ul class="service-swiper  kd-clearfix" id="serviceSwiper">
+					<li class="swiper-item">
+						<div class="fl">
+							<div class="title orange">物流服务商</div>
+							<div class="subtitle">快递100收件端 - 快递员的收件、打单神器</div>
+							<div class="text">
+								<p>每天近100多万快递员在使用收件打单</p>
+								<p>用户扫码下单，免去客户手写面单的麻烦</p>
+								<p>场景化收件、打单、线上收款、对账一体化服务</p>
+								<p>派件、驿站代收、收件打单一个软件就能搞定</p>
+								<p><a class="link" href="#" target="_blank">了解更多</a></p>
+							</div>
+							<div class="courier-code">
+								<img src="img/img_qrcode_download_courier_site_1.png" alt="">
+								<div class="code-text">扫码下载体验</div>
+							</div>
+						</div>
+						<img src="img/section4-2.png" width="668px" style="margin-left: -120px;" class="fr">
+					</li>
+					<li class="swiper-item">
+						<div class="fl">
+							<div class="title orange">物流服务商</div>
+							<div class="subtitle">想怎么打就怎么打<br>想打什么就打什么的云打印API</div>
+							<div class="text">
+								<p>支持国内主流快递公司电子面单</p>
+								<p>支持主流硬件厂商便携式、台式电子面单打印机</p>
+								<p>内置标准打印模板，也可定制打印模板</p>
+								<p>更多快递公司和硬件设备持续接入，可免费更新</p>
+								<p><a class="link" href="#" target="_blank">了解更多</a></p>
+							</div>
+							<a href="#" class="btn" target="_blank">立即申请</a>
+						</div>
+						<img src="img/section4-1.png" width="668px" style="margin-left: -120px;" class="fr">
+					</li>
+					<li class="swiper-item">
+						<div class="fl">
+							<div class="title orange">物流服务商</div>
+							<div class="subtitle">一个不需要电脑就能打印快递单的神器</div>
+							<div class="text">
+								<p>直接连接打印机，即插即用，无需安装驱动</p>
+								<p>手机便捷设置，扫码下单自动打印</p>
+								<p>智能适配多种打印机</p>
+								<p>支持多人共享使用</p>
+								<p><a class="link" href="#" target="_blank">了解更多</a></p>
+							</div>
+							<a href="#" class="btn" target="_blank">联系体验</a>
+						</div>
+						<img src="img/section4-3.png" width="668px" style="margin-left: -120px;" class="fr">
+					</li>
+				</ul>
+				<!-- span不能移除，否则IE9以下会显示不正常 -->
+				<div id="serviceIndicator" class="swiper-indicator">
+					<span></span>
+				</div>
+			</div>
+			<div class="section map-bg">
+				<div class="kd-content">
+					<div class="kd-clearfix dashboard-wrap">
+						<div class="h2">国内领先的快递物流信息服务商</div>
+						<div class="fl dashboard">
+							<div class="item">
+								<p class="count">1.5<sub>亿</sub></p>
+								<p>个人注册用户</p>
+							</div>
+							<div class="item">
+								<p class="count">60<sub>万</sub></p>
+								<p>企业客户</p>
+							</div>
+							<div class="item">
+								<p class="count">120<sub>万</sub></p>
+								<p>快递员</p>
+							</div>
+							<div class="item">
+								<p class="count">3<sub>亿</sub></p>
+								<p>日均查询量</p>
+							</div>
+							<div class="item">
+								<p class="count">8<sub>亿</sub></p>
+								<p>年均寄件量</p>
+							</div>
+						</div>
+						<img src="img/map.png" width="400px" style="margin-top: -50px;" class="fr">
+					</div>
+					<div class="h3">快递物流合作伙伴<a href="#" class="fr link">快递公司入驻</a></div>
+					<img src="img/brand-2.png?version=2"  class="brand">
+				</div>
+			</div>
+			<div class="section cooperation">
+				<div class="kd-content">
+					<div class="h1"><span>商务合作</span></div>
+					<div class="form" id="cooperationType">
+						<div class="form-item">
+							<input type="text" placeholder="姓名" class="small" name="name">
+							<input type="text" placeholder="请输入您的手机号码" class="big" name="phone">
+							<input type="text" placeholder="请输入公司名称" class="big" name="company">
+							<input type="text" placeholder="职位" class="small" name="job">
+						</div>
+						<div class="form-item">
+							<div class="select">
+								<span class="val" style="display: none;"></span>
+								<span class="placeholder">需求</span>
+								<ul class="types">
+									<div class="type" data-key="1">购买智能云打印设备</div>
+									<div class="type" data-key="2">电商寄件</div>
+									<div class="type" data-key="3">接口API</div>
+									<div class="type" data-key="4">商务合作</div>
+									<div class="type" data-key="5">其他</div>
+								</ul>
+							</div>
+							<div class="submit-btn">提交</div>
+						</div>
+					</div>
+					<div class="service-phone">咨询热线：400-000-0387</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/home_page/one.js"></script>
+	<script src="js/home_page/two.js"></script>
+	<script src="js/home_page/three.js"></script>
+	<script src="js/home_page/four.js"></script>
+	<script src="js/home_page/test.js"></script>
+	<!-- 有一个回到头部的特效 -->
+	<script src="js/home_page/five.js"></script>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+	$("#query").click(function(){
+			alert("查快递")
+		})
+		
+
+</script>
+</html>
